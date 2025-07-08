@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+header {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: block;
+  color: #495057;
+}
+
+input, select, button {
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus, select:focus, button:focus {
+  outline: none;
+  border-color: #495057;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+thead {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f1f3f5;
+}
+
+tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem; /* tighter spacing */
+  margin-bottom: 1rem;
+}
+
+.controls > * {
+  min-width: 120px;
+  flex: 1 1 auto;
+  max-width: 200px;
+  padding: 0.4rem 0.6rem; /* smaller padding inside inputs/buttons */
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+
+table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px; /* limit max width */
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+}
+
+.fineprint {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6c757d; /* a nice subtle gray */
+  margin: 2rem 0 1rem 0;
+  font-style: italic;
+  user-select: none;
+}
+

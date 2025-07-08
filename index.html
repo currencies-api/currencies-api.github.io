@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="currency-app">
+    <div class="controls">
+      <h2>Currency App</h2>
+
+    <div>
+      <button id="loadCurrenciesBtn">Load Currencies</button>
+    </div>
+
+    <div>
+      <label>Select Currency:
+        <select id="currencySelector">
+          <option value="">-- Select --</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <label>Search:
+        <input type="text" id="searchField" placeholder="Filter currencies"/>
+      </label>
+    </div>
+
+    <div>
+      <label>Multiplier:
+        <input type="number" id="multiplierField" value="1" />
+      </label>
+    </div>
+
+    <div>
+      <button id="fetchRatesBtn">Fetch Rates</button>
+      <button id="clearBtn">Clear</button>
+      <button id="exportBtn">Export to Excel</button>
+    </div>
+    </div>
+    
+
+    <table id="currencyTable">
+      <thead>
+        <tr>
+          <th>Currency</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script src="app.js"></script>. 
+  <footer class="fineprint">
+    Currency and exchange rate data provided is only suitable for informational or illustrative purposes.<br> Use of the exchange rates we provide for actual transactions or as financial data is explicitly not recommended.<br> Data is supplied by a 3rd party.
+  </footer>
+
+</body>
+</html>
